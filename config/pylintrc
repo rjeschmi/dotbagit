@@ -10,9 +10,9 @@ init-hook='''
   import logging
   logger = logging.getLogger('pylintrc')
   ch = logging.StreamHandler()
-  ch.setLevel(logging.DEBUG)
+  ch.setLevel(logging.INFO)
   logger.addHandler(ch)
-  logger.setLevel(logging.DEBUG)
+  logger.setLevel(logging.INFO)
   project_root = '/Users/robertschmidt/git/dotbagit-python'
   sys.path.insert(1, project_root)
   logger.debug(sys.path)
